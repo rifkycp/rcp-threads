@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
-const threadSchema = new mongoose.Schema({
-    _id: mongoose.Schema.Types.ObjectId,
+const threadSchema = new mongoose.Schema({        
     text: {type: String, require: true},
     author: {
         type: mongoose.Schema.Types.ObjectId,
